@@ -35,7 +35,7 @@ def enter():
     if not session:
         return redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     elif session["passwd"] == "gay":
-        return "<h1>congrats</h1>"
+        return render_template("entered.html")
 
 #driver functions
 if __name__ == "__main__":
