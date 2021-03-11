@@ -17,7 +17,7 @@ def home():
             session["passwd"] = passwd
             return redirect(url_for("enter"))
         else:
-            return "<h1>INCORRECT PASSWORD</h1>"
+            return render_template("incorrect.html")
     else:
         if "passwd" in session:
             return redirect(url_for("enter"))
